@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="script.js"></script>
+    <title>String Operations</title>
+</head>
+<body style="padding-left: 20px">
+    <h3>Kunal Tambe</h3>
+    <h3>BE-7 S7</h3>
+    <h3>Roll No: 42367</h3>
+    <div class="container">        
+        <div class="operation">
+            <h3>Reverse the String</h3>
+            <label for="s">Enter the String:</label>
+            <input type="text" id="s" placeholder="Enter the String">
+            <button onclick="reverse()">Reverse the String</button>
+            <p class="output">Output: <span id="display1"></span></p>
+        </div>
+
+        <div class="operation">
+            <h3>Check Palindrome</h3>
+            <label for="string1">Enter a String:</label>
+            <input id="string1" placeholder="Enter the string">
+            <button onclick="is_pal()">Check Palindrome</button>
+            <p class="output">Is palindrome or not: <span id="pal"></span></p>
+        </div>
+
+        <div class="operation">
+            <h3>Replace Characters</h3>
+            <label for="string3">Enter a String:</label>
+            <input id="string3" placeholder="Enter the string">
+            <br><br>
+            <label for="char1">Character to replace:</label>
+            <input id="char1" placeholder="Enter the character to be replaced">
+            <br><br>
+            <label for="char2">New Character:</label>
+            <input id="char2" placeholder="Enter the new character">
+            <br><br>
+            <button onclick="replaced()">Replace Character</button>
+            <p class="output">String after replacing: <span id="rep"></span></p>
+        </div>
+    </div>
+</body>
+</html>

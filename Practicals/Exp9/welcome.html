@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', monospace;
+            background-color: #e8e8e8;
+            text-align: center;
+        }
+
+        .welcome-container {
+            max-width: 600px;
+            margin: 100px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .welcome-message {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .user-name {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .back-button {
+            background-color: grey;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .back-button:hover {
+            background-color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <div class="welcome-message">
+            <h1>Welcome, <span class="user-name" id="userName"></span>!</h1>
+            <p>Thank you for providing your information.</p>
+        </div>
+        <a href="index.html" class="back-button btn btn-secondary">Go Back</a>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const userName = params.get('name');
+        document.getElementById('userName').textContent = decodeURIComponent(userName);
+    </script>
+</body>
+</html>
